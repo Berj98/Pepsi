@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Blaka&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --blue: #1a1add;
+    --lightblue: #4444ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: var(--blue);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 190px;
+}
+.navigation a{
+    padding-right: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.logo img{
+    width: 65px;
+}
+.circle{
+    background-color: var(--lightblue);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(40% at right 70%);
+    z-index: -1;
+}
+section{
+    padding: 100px 200px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+.main h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.main h2 span{
+    font-size: 55px;
+    font-weight: 900;
+    margin-top: 25px;
+    display: inline-block;
+}
+.main h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.main p{
+    width: 50%;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.main a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: #4444ff;
+    color: #fff;
+    padding: 15px 26px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+}
+.main a:hover{
+    transform: scale(1.1);
+}
+.image{
+    position: relative;
+}
+.image img{
+    width: 300px;
+    position: absolute;
+    left: -120px;
+    transform: translateY(-70px);
+}
+.list-img{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translate(-50%, -95%);
+}
+.list-img img{
+    
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+.list-img img:hover{
+    transform: scale(1.1);
+}
